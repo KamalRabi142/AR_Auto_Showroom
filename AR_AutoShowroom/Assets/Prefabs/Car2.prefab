@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Open Door
+  m_text: Toggle Door
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -230,7 +230,7 @@ Animator:
   m_GameObject: {fileID: 3075998776332833491}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8df7296682427a54680459b579aa0cbb, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -484,7 +484,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3310844821036534173}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7715824036881976849}
+        m_TargetAssemblyTypeName: DoorController, Assembly-CSharp
+        m_MethodName: ToggleDoor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4379113379241695500
 GameObject:
   m_ObjectHideFlags: 0
@@ -916,6 +928,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7177479520548117861, guid: 619ed4d97802e784188b1959b964f260,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -7177479520548117861, guid: 619ed4d97802e784188b1959b964f260,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -7177479520548117861, guid: 619ed4d97802e784188b1959b964f260,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7177479520548117861, guid: 619ed4d97802e784188b1959b964f260,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7177479520548117861, guid: 619ed4d97802e784188b1959b964f260,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -7177479520548117861, guid: 619ed4d97802e784188b1959b964f260,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 635547659545568360, guid: 619ed4d97802e784188b1959b964f260,
         type: 3}
       propertyPath: m_Name
@@ -929,7 +971,15 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: -291513836418553117, guid: 619ed4d97802e784188b1959b964f260,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6732819104910037589}
+    - targetCorrespondingSourceObject: {fileID: -291513836418553117, guid: 619ed4d97802e784188b1959b964f260,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7715824036881976849}
   m_SourcePrefab: {fileID: 100100000, guid: 619ed4d97802e784188b1959b964f260, type: 3}
 --- !u!23 &2366438095878148761 stripped
 MeshRenderer:
@@ -943,6 +993,45 @@ MeshRenderer:
     type: 3}
   m_PrefabInstance: {fileID: 5146039141211655819}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &4367984627609265256 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -291513836418553117, guid: 619ed4d97802e784188b1959b964f260,
+    type: 3}
+  m_PrefabInstance: {fileID: 5146039141211655819}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &6732819104910037589
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4367984627609265256}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8df7296682427a54680459b579aa0cbb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7715824036881976849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4367984627609265256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bacad8debe317d745bbc0b75cac73830, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &4674980680794384736 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 619ed4d97802e784188b1959b964f260,
