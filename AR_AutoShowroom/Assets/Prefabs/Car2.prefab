@@ -145,7 +145,6 @@ GameObject:
   - component: {fileID: 6567322897908282222}
   - component: {fileID: 5522468190644449410}
   - component: {fileID: 2822856890015911210}
-  - component: {fileID: 8369660389302860385}
   - component: {fileID: 6488406953199596809}
   - component: {fileID: 4496262113873624528}
   m_Layer: 0
@@ -220,27 +219,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!95 &8369660389302860385
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3075998776332833491}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 8df7296682427a54680459b579aa0cbb, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!82 &6488406953199596809
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1009,7 +987,7 @@ Animator:
   m_GameObject: {fileID: 4367984627609265256}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 8df7296682427a54680459b579aa0cbb, type: 2}
+  m_Controller: {fileID: 9100000, guid: 49fab2436defc23409beeae4d7c19bbc, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
